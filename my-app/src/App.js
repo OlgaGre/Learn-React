@@ -1,18 +1,11 @@
 import React from 'react';
-// Пусть в константе isAdult содержится true, если пользователю уже есть 18 лет, и false, если нет
-// Сделайте так, чтобы в зависимости от значения isAdult на экране показался или один абзац с текстом, или другой.
+// Если в age записано больше 18 лет, то в тексте тега div покажите пользователю абзац с одним текстом, а если меньше - то с другим.
 
 function App() {
-  let text;
-  const isAdult = true;
-  if (isAdult) {
-    text = "взрослый"
-  } else {
-    text = "ребенок"
-  }
-return <div>
-  {text}
-</div>
+	const age = 1;
+	
+	return <div>
+		{age <= 18? 'less':'more'}
+	</div>;
 }
-
 export default App;

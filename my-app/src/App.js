@@ -1,5 +1,5 @@
 import React from 'react';
-// Сделайте функцию getDigitsSum, которая будет находить сумму цифр переданного числа. С ее помощью выведите на экран сумму цифр числа 123.
+//Используя созданную вами функцию getDigitsSum выведите в абзац сумму цифр числа 12345.
 
 function App() {
 	function getDigitsSum(num) {
@@ -11,10 +11,10 @@ function App() {
  return result
     
   }
- let text = getDigitsSum(123)
+
 	
 	return <div>
-	{text}
+	{getDigitsSum(12345)}
 	</div>;
 }
 export default App;

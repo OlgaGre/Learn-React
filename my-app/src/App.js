@@ -1,11 +1,20 @@
 import React from 'react';
-// Если в age записано больше 18 лет, то в тексте тега div покажите пользователю абзац с одним текстом, а если меньше - то с другим.
+// Сделайте функцию getDigitsSum, которая будет находить сумму цифр переданного числа. С ее помощью выведите на экран сумму цифр числа 123.
 
 function App() {
-	const age = 1;
+	function getDigitsSum(num) {
+    let result = 0
+    let numberString = num.toString();
+    for (let i = 0; i < numberString.length; i++) {
+      result += parseInt(numberString[i]);
+    }
+ return result
+    
+  }
+ let text = getDigitsSum(123)
 	
 	return <div>
-		{age <= 18? 'less':'more'}
+	{text}
 	</div>;
 }
 export default App;

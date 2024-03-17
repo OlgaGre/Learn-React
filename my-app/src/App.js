@@ -1,16 +1,27 @@
 import React from 'react';
-//Добавьте в див несколько инпутов, разделенных тегами br.
+//Сделайте внутри дива таблицу с тремя рядами и тремя колонками.
 
 
 function App() {
-	return <div>
-		<input />
-    <br />
-    <input />
-    <br />
-    <input />
-
-	</div>;
+	return <table>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+        <td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+        <td>6</td>
+			</tr>
+      <tr>
+				<td>7</td>
+				<td>8</td>
+        <td>9</td>
+			</tr>
+		</tbody>
+	</table>;
 }
 
 export default App;

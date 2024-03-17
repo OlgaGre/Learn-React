@@ -1,18 +1,21 @@
 import React from 'react';
-//Сделайте так, чтобы результатом рендеринга был тег ul, в тегах li которого будут стоять элементы массива.
+//Сделайте так, чтобы результатом рендеринга было следующее:
+
+// <ul>
+// 	<li>text1</li>
+// 	<li>text2</li>
+// 	<li>text3</li>
+// </ul>
 
 function App() {
-	const arr = [1, 2, 3, 4, 5];
-  let result 
-  function liFromArr()  {
-    for (let i = 0; i < arr.length; i++) {
-  result +=  `<li>${arr[i]} </li>`;
-}
-  }
-  liFromArr()
-return <ul>
-{result}
-</ul>
+	const li1 = <li>text1</li>;
+	const li2 = <li>text2</li>;
+	const li3 = <li>text3</li>;
+  return <ul>
+    {li1}
+    {li2}
+    {li3}
+  </ul>
 }
 
 export default App;

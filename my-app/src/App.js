@@ -1,20 +1,18 @@
 import React from 'react';
-//Используя созданную вами функцию getDigitsSum выведите в абзац сумму цифр числа 12345.
+//Сделайте так, чтобы по клику на первую кнопку срабатывала первая функция, а по клику на вторую кнопку - вторая функция.
 
 function App() {
-	function getDigitsSum(num) {
-    let result = 0
-    let numberString = num.toString();
-    for (let i = 0; i < numberString.length; i++) {
-      result += parseInt(numberString[i]);
-    }
- return result
-    
-  }
-
+	function show1() {
+		alert(1);
+	}
+	
+	function show2() {
+		alert(2);
+	}
 	
 	return <div>
-	{getDigitsSum(12345)}
+		<button onClick={show1}>act1</button>
+		<button  onClick={show2}>act2</button>
 	</div>;
 }
 export default App;

@@ -1,27 +1,18 @@
 import React from 'react';
-//Сделайте внутри дива таблицу с тремя рядами и тремя колонками.
-
+// Пусть в константе isAdult содержится true, если пользователю уже есть 18 лет, и false, если нет
+// Сделайте так, чтобы в зависимости от значения isAdult на экране показался или один абзац с текстом, или другой.
 
 function App() {
-	return <table>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>2</td>
-        <td>3</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>5</td>
-        <td>6</td>
-			</tr>
-      <tr>
-				<td>7</td>
-				<td>8</td>
-        <td>9</td>
-			</tr>
-		</tbody>
-	</table>;
+  let text;
+  const isAdult = true;
+  if (isAdult) {
+    text = "взрослый"
+  } else {
+    text = "ребенок"
+  }
+return <div>
+  {text}
+</div>
 }
 
 export default App;

@@ -1,14 +1,22 @@
 import React from 'react';
-//Сделайте так, чтобы по клику на первую кнопку алертом выводилось число 1, по клику на вторую кнопку - число 2, а по клику на третью - число 3.
+// //С помощью этого массива сформируйте следующий код:
+
+// <ul>
+// 	<li>a</li>
+// 	<li>b</li>
+// 	<li>c</li>
+// 	<li>d</li>
+// 	<li>e</li>
+// </ul>
 
 function App() {
-  function alertNum(num) {
-    alert(num)
-  }
-	return <div>
-		<button onClick={() => alertNum('1')}>act1</button>
-		<button onClick={() => alertNum('2')}>act2</button>
-		<button onClick={() => alertNum('3')}>act3</button>
-	</div>;
+	const arr = ['a', 'b', 'c', 'd', 'e'];
+  let li = arr.map(function(item) {
+		return <li>{item}</li>;
+	});
+  return <ul>
+    {li}
+  </ul>
+
 }
 export default App;
